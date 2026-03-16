@@ -2,7 +2,7 @@
 
 **ESP32-S3 firmware for a wireless-controlled pressure/vacuum pump system**
 
-A dual-interface (BLE + 433 MHz RF) embedded controller for a pneumatic pump unit built around three reclaimed diaphragm pumps. Designed for extended CNC machining sessions where a suction-cup workpiece fixture requires reliable, remotely-operable air management.
+A dual-interface (BLE + 433 MHz RF) embedded controller for a pneumatic pump unit built around three reclaimed diaphragm pumps. Designed for extended CNC machining sessions.
 
 ---
 
