@@ -9,8 +9,8 @@ class ValveLockStatusCharacteristicCallbacks final : public BLECharacteristicCal
 {
     virtual void onWrite(BLECharacteristic* pCharacteristic) override
     {
-        const std::string textValue = pCharacteristic->getValue();
-        const uint8_t value = textValue.at(0);
+        const String textValue = pCharacteristic->getValue();
+        const uint8_t value = textValue[0];
 
         if (value)
             sys_runtime_activate_valve();

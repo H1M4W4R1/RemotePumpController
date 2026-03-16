@@ -9,8 +9,8 @@ class ValveLockAllowedCharacteristicCallbacks final : public BLECharacteristicCa
 {
     virtual void onWrite(BLECharacteristic* pCharacteristic) override
     {
-        const std::string textValue = pCharacteristic->getValue();
-        const uint8_t value = textValue.at(0);
+        const String textValue = pCharacteristic->getValue();
+        const uint8_t value = textValue[0];
 
         is_valve_remote_change_disabled = value;
     }

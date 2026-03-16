@@ -9,7 +9,7 @@ class ExpectedSessionTimeCharacteristicCallbacks final : public BLECharacteristi
 {
     virtual void onWrite(BLECharacteristic* pCharacteristic) override
     {
-        const std::string textValue = pCharacteristic->getValue();
+        const String textValue = pCharacteristic->getValue();
 
         // Copy data to value nicely :)
         uint32_t          value;
